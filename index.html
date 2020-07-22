@@ -19,12 +19,9 @@
                 <li class="desktop"><a href="contact.html">联系我</a></li>
             </ul>
             <ul>
-                <button class="btns" data-id='img1'>btn1</button>
-                <button class="btns" data-id='img2'>btn2</button>
-                <button class="btns" data-id='img3'>btn3</button>
-                <button class="btns" data-id='img3'>btn4</button>
-                <button class="btns" data-id='img3'>btn5</button>
-                <button class="btns" data-id='img3'>btn6</button>
+                <button class="btns" data-id='img1'>塞尔达</button>
+                <button class="btns" data-id='img2'>温斯顿</button>
+                <button class="btns" data-id='img3'>巫师3</button>
             </ul>
         </nav>
     </header>
@@ -47,8 +44,13 @@
     <script>
         $(function(){
 
+            $('')
+
             $('button').on('click', function(){
-                $(this).siblings().hide(); 
+                let imgid = $(this).attr('data-id');
+                console.log(imgid);
+                $('#'+imgid).toggle();
+                $('#'+imgid+'-f').toggle();
             });
 
 

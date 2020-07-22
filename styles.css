@@ -6,6 +6,20 @@ body{
     padding: 0;
 }
 
+button{
+    background-color:#7ac3da;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 4vw;
+    color:white;
+}
+
+button:hover{
+    background-color:#7adaaa;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 header{
     background: black;
     background-image: url(images/塞尔达.jpg);
