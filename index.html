@@ -49,8 +49,8 @@
             $('button').on('click', function(){
                 let imgid = $(this).attr('data-id');
                 console.log(imgid);
-                $('#'+imgid).toggle();
-                $('#'+imgid+'-f').toggle();
+                $('#'+imgid).slideToggle(1000);
+                $('#'+imgid+'-f').fadeToggle(1000);
             });
 
 
