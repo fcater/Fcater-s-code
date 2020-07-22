@@ -14,27 +14,46 @@
                 <li><a href="menu.html">菜单</a></li>
                 <li class="mobile"><a href="locations.html">地址</a></li>
                 <li class="mobile"><a href="contact.html">联系我</a></li>
-                <li class="logo"><a href="index.html">Logo</a></li>
+                <li class="logo" id="logo"><a href="index.html">Logo</a></li>
                 <li class="desktop"><a href="locations.html">地址</a></li>
                 <li class="desktop"><a href="contact.html">联系我</a></li>
+            </ul>
+            <ul>
+                <button class="btns" data-id='img1'>btn1</button>
+                <button class="btns" data-id='img2'>btn2</button>
+                <button class="btns" data-id='img3'>btn3</button>
+                <button class="btns" data-id='img3'>btn4</button>
+                <button class="btns" data-id='img3'>btn5</button>
+                <button class="btns" data-id='img3'>btn6</button>
             </ul>
         </nav>
     </header>
     <section class="features">
         <figure>
-            <img src="images/塞尔达.jpg" alt="zelda">
-            <figcaption>zelda</figcaption>
+            <img src="images/塞尔达.jpg" alt="zelda" id="img1">
+            <figcaption id="img1-f">zelda</figcaption>
         </figure>
         <figure>
-            <img src="images/温斯顿.jpg" alt="winston">
-            <figcaption>winston</figcaption>
+            <img src="images/温斯顿.jpg" alt="winston" id="img2">
+            <figcaption id="img2-f">winston</figcaption>
         </figure><figure>
-            <img src="images/巫师3.jpg" alt="witcher3">
-            <figcaption>witcher3</figcaption>
+            <img src="images/巫师3.jpg" alt="witcher3" id="img3">
+            <figcaption id="img3-f">witcher3</figcaption>
         </figure>
     </section>
 
     <footer>脚注 Lorem ipsum dolor sit amet co</foot>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(function(){
 
+            $('button').on('click', function(){
+                $(this).siblings().hide(); 
+            });
+
+
+
+        });
+    </script>
 </body>
 </html>
